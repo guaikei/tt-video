@@ -6,6 +6,11 @@ name: tt-video
 description: "TikTok视频数据只读技能：关键词搜视频、博主作品、视频评论，输出 JSON，不登录不发布。触发词：TikTok、tiktok、抖音国际版、TikTok搜索、TikTok评论、TikTok博主。用户要查 TikTok 视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.4
+display_name: "TikTok视频数据｜关键词搜索·作品详情·博主作品·互动数据"
+display_name_en: "TikTok Video"
+description_zh: "TikTok视频公开数据（只读）：关键词搜索视频、博主作品列表与单条作品详情（标题/封面/时长/播放/点赞）、视频评论详情（内容/点赞），全部输出结构化 JSON 供 AI 直接做数据整理与分析；支持最多点赞/最热排序与时间窗筛选，可用于爆款视频选题挖掘、竞品账号监控、KOL 真实互动率核验与评论舆情分析。不登录、不发布、不点赞、不评论。按量单次最多 1 万条；包月搜索/作品最多 30、评论最多 40，超限返回 PLAN_LIMIT（退出码 1），降 limit 或升级须用户同意后再跑。适用于竞品监控、趋势预测、KOL 筛选与市场洞察报告。"
+description_en: "Read-only TikTok video data source: keyword video search, creator post lists and single post details (title, cover, duration, plays, likes), and video comments - all as structured JSON an AI can turn into a report. Supports most-liked / hottest sorting plus time-window filters, covering use cases from trending-video topic mining and competitor account monitoring to verifying real KOL engagement rates and analysing comment sentiment. Read-only by design: no login, no publishing, no likes, no comments. Pay-per-use up to 10,000 records per call; monthly plans allow up to 30 search and post queries and 40 comment queries - exceeding them returns PLAN_LIMIT (exit code 1), so lower the limit or upgrade only with the user's consent."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     primaryEnv: GUAIKEI_API_TOKEN
